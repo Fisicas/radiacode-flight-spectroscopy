@@ -1,0 +1,10 @@
+{
+  "deviceId": "synthetic-example",
+  "channelCount": 4,
+  "coefficients": [0.0, 1.0, 0.0],
+  "title": "synthetic fixture",
+  "spectrums": [
+    {"timestamp": 1780272000000, "collectTime": 1.0, "pulses": [2, 0, 0, 0]},
+    {"timestamp": 1780272001000, "collectTime": 1.0, "pulses": [1, 0, 0, 1]}
+  ]
+}

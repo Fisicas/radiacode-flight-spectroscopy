@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: >-
+  If you use the software, project-owned data, or derived methods, please cite
+  this repository. See LICENSE-DATA.md and THIRD_PARTY_NOTICES.md for material
+  excluded from the project data license.
+title: "RadiaCode flight spectroscopy"
+type: software
+version: "0.1.0"
+license: MIT
+repository-code: "https://github.com/Fisicas/radiacode-flight-spectroscopy"
+authors:
+  - family-names: "Nelson"
+    given-names: "Michael"
+    email: "nelsondirect@gmail.com"
+keywords:
+  - gamma-ray spectroscopy
+  - RadiaCode
+  - aviation
+  - reproducible research
+  - detector response
+abstract: >-
+  A data, methods, and derived-results snapshot for time-resolved RadiaCode
+  gamma-ray spectroscopy during four commercial flights. It includes original
+  detector files, calibration evidence, compact derived products, validation
+  tools, and cautious detector-response interpretation. Third-party flight-track
+  files are not redistributed. Non-raw FlightAware-derived products are
+  displayed for noncommercial academic review and excluded from the repository's
+  MIT and CC BY 4.0 licenses. The snapshot does not claim direct particle
+  fluence, species identification, or calibrated dose.

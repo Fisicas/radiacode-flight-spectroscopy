@@ -1,0 +1,23 @@
+{
+  "frame_count": 90,
+  "frames_per_second": 12,
+  "frame_duration_ms": 80,
+  "panel_height_px": 1588,
+  "panel_widths_px": {
+    "spectrum_route": 960,
+    "spectrograms_overflow": 1170,
+    "diagnostics": 900
+  },
+  "synchronization": "Within each flight directory, the three GIFs use the same sampled detector-record indices, UTC header, elapsed-time cursor, and frame duration.",
+  "panel_order": [
+    "spectrum_route",
+    "spectrograms_overflow",
+    "diagnostics"
+  ],
+  "flight_keys": [
+    "MSP_MSP-ATL",
+    "LGA_ATL-LGA",
+    "LGA_LGA-ATL",
+    "OMA_ATL-OMA"
+  ]
+}

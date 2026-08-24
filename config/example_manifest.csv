@@ -1,0 +1,2 @@
+flight_key,route,detector_file,track_file,detector_sha256,track_sha256,detector_id,utc_start,utc_end,overlap_start_utc,overlap_end_utc,calibration_manifest_id,analysis_config_version,detector_placement,detector_orientation,aircraft,cabin_location,notes
+EXAMPLE_KATL-KOMA,KATL-KOMA,data/example/example.rcspg,data/example/example.kml,,,,,,,embedded_example,0.1.0,synthetic fixture,unknown,example,not applicable,Small public fixture for parser and time-overlap tests; not a scientific flight result.

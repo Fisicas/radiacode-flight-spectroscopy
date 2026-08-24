@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radiacode-flight"
+version = "0.1.0"
+description = "Data, methods, and derived-results snapshot for RadiaCode flight spectrograms"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Michael Nelson", email = "nelsondirect@gmail.com" }]
+keywords = ["gamma-ray spectroscopy", "RadiaCode", "aviation", "detector response"]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "Pillow>=10.0",
+]
+
+[project.urls]
+Repository = "https://github.com/Fisicas/radiacode-flight-spectroscopy"
+Issues = "https://github.com/Fisicas/radiacode-flight-spectroscopy/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+radiacode-flight = "radiacode_flight.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

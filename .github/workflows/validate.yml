@@ -1,0 +1,36 @@
+name: validate snapshot
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: python -m pip install -e .
+      - name: Unit and regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate public detector manifest
+        run: radiacode-flight validate --manifest config/four_flights.csv
+      - name: Verify deterministic calibration exports
+        run: python calibration/recalibrate_spectra.py --check
+      - name: Verify peak-centroid and held-out validation products
+        run: python calibration/validate_peak_centroids.py --check
+      - name: Verify Figure 01 generator and PNG/SVG synchronization
+        run: python scripts/build_figure_01.py --check
+      - name: Check repository integrity and public wording
+        run: python scripts/check_repository.py
+      - name: Smoke-test pooled analysis
+        run: python scripts/analyze_overflow_pressure.py
+      - name: Smoke-test single-flight analysis
+        run: >-
+          python scripts/analyze_featured_flight_overflow.py
+          --output-dir "${{ runner.temp }}/derived"
+          --figure "${{ runner.temp }}/figure_06.png"

@@ -1,0 +1,27 @@
+# Raw detector inputs are opt-in. The four named .rcspg files are intentionally
+# included by the project author. Third-party flight tracks, including KML
+# downloads, remain ignored and are never redistributed from this repository.
+data/raw/*
+!data/raw/
+!data/raw/MSP_MSP-ATL.rcspg
+!data/raw/LGA_ATL-LGA.rcspg
+!data/raw/LGA_LGA-ATL.rcspg
+!data/raw/OMA_ATL-OMA.rcspg
+!data/raw/SHA256SUMS.txt
+data/private/
+config/*.local.csv
+config/*.local.yml
+
+# Generated products and local caches
+outputs/
+animations/frames/
+*.pyc
+__pycache__/
+.pytest_cache/
+.venv/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

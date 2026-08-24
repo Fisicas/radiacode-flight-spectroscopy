@@ -1,0 +1,22 @@
+{
+  "calibration_id": "manual_primary_quadratic_2026-08-21",
+  "status": "working_not_final",
+  "bootstrap_replicates": 4000,
+  "anchor_count": 9,
+  "anchor_energy_range_keV": [
+    59.5409,
+    2614.511
+  ],
+  "leave_one_peak_out": {
+    "fold_count": 9,
+    "near_511_context_lines_keV": [
+      583.187,
+      609.312
+    ],
+    "near_511_context_max_absolute_residual_keV": 4.358767
+  },
+  "interpretation": {
+    "near_511_keV": "A four-flight detector-spectrum centroid can be described with a counting-statistical interval, but the nearby held-out residual and unmodeled response systematics preclude isotope identification. The raw-channel aggregation assumes stable detector response across the four acquisitions.",
+    "low_energy_structure": "No precision centroid is reported: the structure is below the lowest anchor, threshold-adjacent, and model-dependent."
+  }
+}

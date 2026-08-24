@@ -1,0 +1,10 @@
+source_file,nuclide_or_line,assigned_energy_keV,fitted_channel,fit_window_channels,background_subtracted_moment_channel,moment_minus_fitted_channel,effective_sigma_channel,estimated_net_counts,centroid_counting_stat_1sigma_channel,centroid_counting_stat_1sigma_keV,uncertainty_scope
+source_spectra/Am-241.xml,Am-241 gamma,59.5409,22.2129571584,14-31,22.245889,0.032932,2.356953,234485.8,0.005466,0.013378,Poisson counting statistics only
+source_spectra/Ra-226.xml,Ra-226 gamma,186.211,73.7804661106,64-82,73.398773,-0.381693,3.028772,17535.0,0.080109,0.199175,Poisson counting statistics only
+source_spectra/Ra-226.xml,Pb-214 gamma,241.995,95.7118656969,87-104,95.626793,-0.085073,2.780669,11288.6,0.088709,0.222016,Poisson counting statistics only
+source_spectra/Ra-226.xml,Pb-214 gamma,295.224,117.0840033848,107-127,116.744376,-0.339627,3.343496,21649.0,0.064081,0.161405,Poisson counting statistics only
+source_spectra/Ra-226.xml,Pb-214 gamma,351.932,139.8925862751,128-151,139.533732,-0.358855,3.877747,36048.4,0.043813,0.111102,Poisson counting statistics only
+source_spectra/Ra-226.xml,Bi-214 gamma,609.312,238.683228057,224-253,238.865639,0.182411,4.990066,14801.0,0.085286,0.222587,Poisson counting statistics only
+source_spectra/Th-232.xml,Pb-212 gamma,238.632,94.8143075474,84-106,94.823941,0.009634,3.514912,43869.0,0.030208,0.075583,Poisson counting statistics only
+source_spectra/Th-232.xml,Tl-208 gamma,583.187,230.5847836964,216-245,230.136276,-0.448508,5.087724,3629.9,0.215759,0.561798,Poisson counting statistics only
+source_spectra/Th-232.xml,Tl-208 gamma,2614.511,937.8096002119,920-955,939.40575,1.59615,7.425914,98.5,1.009837,3.16463,Poisson counting statistics only

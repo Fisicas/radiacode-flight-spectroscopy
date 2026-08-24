@@ -1,0 +1,10 @@
+held_out_source_file,held_out_line,assigned_energy_keV,predicted_energy_keV,residual_predicted_minus_assigned_keV,counting_stat_prediction_1sigma_keV,calibration_fit_anchor_count,near_511_context,validation_scope
+source_spectra/Am-241.xml,Am-241 gamma,59.5409,59.160223,-0.380677,0.258684,8,no,line excluded from this fold; statistical centroid uncertainty only
+source_spectra/Ra-226.xml,Ra-226 gamma,186.211,186.634989,0.423989,0.204998,8,no,line excluded from this fold; statistical centroid uncertainty only
+source_spectra/Ra-226.xml,Pb-214 gamma,241.995,241.13706,-0.85794,0.232403,8,no,line excluded from this fold; statistical centroid uncertainty only
+source_spectra/Ra-226.xml,Pb-214 gamma,295.224,294.877195,-0.346805,0.18894,8,no,line excluded from this fold; statistical centroid uncertainty only
+source_spectra/Ra-226.xml,Pb-214 gamma,351.932,352.666229,0.734229,0.17175,8,no,line excluded from this fold; statistical centroid uncertainty only
+source_spectra/Ra-226.xml,Bi-214 gamma,609.312,604.953233,-4.358767,0.436575,8,yes,line excluded from this fold; statistical centroid uncertainty only
+source_spectra/Th-232.xml,Pb-212 gamma,238.632,239.080647,0.448647,0.106563,8,no,line excluded from this fold; statistical centroid uncertainty only
+source_spectra/Th-232.xml,Tl-208 gamma,583.187,587.116976,3.929976,0.575477,8,yes,line excluded from this fold; statistical centroid uncertainty only
+source_spectra/Th-232.xml,Tl-208 gamma,2614.511,2640.180641,25.669641,9.865458,8,no,line excluded from this fold; statistical centroid uncertainty only

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Document>
+    <name>Synthetic example track</name>
+    <gx:Track>
+      <when>2026-06-01T00:00:00Z</when>
+      <when>2026-06-01T00:00:02Z</when>
+      <gx:coord>-84.4 33.6 300</gx:coord>
+      <gx:coord>-95.9 41.3 300</gx:coord>
+    </gx:Track>
+  </Document>
+</kml>

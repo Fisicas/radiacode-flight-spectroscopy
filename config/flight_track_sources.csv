@@ -1,0 +1,5 @@
+flight_key,flight_designator,flight_date_local,route,original_kml_sha256,source,access_instructions
+MSP_MSP-ATL,DAL1052,2026-06-21,KMSP-KATL,E3FBCDACBFB5CC068234ABDD6C1723E41605F0317F1BDE184FD379C227493828,FlightAware,Open the dated flight in FlightAware history; below the Flight Track Log click +GoogleEarth.
+LGA_ATL-LGA,AAL4605,2026-07-03,KATL-KLGA,7DE2E7F75710CE79BFEC394F828E5829C08ACDB60C5B9C26F5F035508DA737A0,FlightAware,Open the dated flight in FlightAware history; below the Flight Track Log click +GoogleEarth.
+LGA_LGA-ATL,DAL342,2026-07-06,KLGA-KATL,BC1D6D98759E979406904074572B936E599B8A9AAD316EE5B177E4191631AAA0,FlightAware,Open the dated flight in FlightAware history; below the Flight Track Log click +GoogleEarth.
+OMA_ATL-OMA,DAL2707,2026-08-07,KATL-KOMA,CCEC8FB0C74E8F7F14FACDC5399150EABF40387E74F9DACD748FB0B762E4D3EB,FlightAware,Open the dated flight in FlightAware history; below the Flight Track Log click +GoogleEarth.
