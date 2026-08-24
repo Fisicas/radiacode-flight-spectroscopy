@@ -2,3 +2,5 @@
 calibration/energy_converted_spectra/*.csv text eol=lf
 calibration/validation/*.csv text eol=lf
 calibration/validation/*.json text eol=lf
+data/derived/*.csv text eol=lf
+data/derived/*.json text eol=lf

@@ -770,9 +770,21 @@ def run_analysis(
     }
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    model_table.to_csv(output_dir / "OMA_ATL-OMA_overflow_depth_models.csv", index=False, float_format="%.10g")
-    prediction_table.to_csv(output_dir / "OMA_ATL-OMA_overflow_depth_predictions.csv", index=False, float_format="%.10g")
-    with (output_dir / "OMA_ATL-OMA_overflow_depth_analysis.json").open("w", encoding="utf-8") as handle:
+    model_table.to_csv(
+        output_dir / "OMA_ATL-OMA_overflow_depth_models.csv",
+        index=False,
+        float_format="%.10g",
+        lineterminator="\n",
+    )
+    prediction_table.to_csv(
+        output_dir / "OMA_ATL-OMA_overflow_depth_predictions.csv",
+        index=False,
+        float_format="%.10g",
+        lineterminator="\n",
+    )
+    with (output_dir / "OMA_ATL-OMA_overflow_depth_analysis.json").open(
+        "w", encoding="utf-8", newline="\n"
+    ) as handle:
         json.dump(summary, handle, indent=2)
     make_figure(data, fits, figure_path)
     return {
