@@ -470,7 +470,11 @@ def build_validation_products() -> tuple[
 
 def _write_csv(path: Path, rows: list[dict[str, object]]) -> None:
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=list(rows[0]),
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
 
@@ -481,10 +485,9 @@ def write_validation_products(output_dir: Path) -> None:
     _write_csv(output_dir / OUTPUT_NAMES[0], anchors)
     _write_csv(output_dir / OUTPUT_NAMES[1], held_out)
     _write_csv(output_dir / OUTPUT_NAMES[2], features)
-    (output_dir / OUTPUT_NAMES[3]).write_text(
-        json.dumps(summary, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
+    summary_path = output_dir / OUTPUT_NAMES[3]
+    with summary_path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(summary, indent=2, ensure_ascii=False) + "\n")
 
 
 def main() -> int:

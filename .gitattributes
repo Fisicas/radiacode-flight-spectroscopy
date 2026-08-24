@@ -1,0 +1,4 @@
+# Deterministic calibration products are compared byte-for-byte in CI.
+calibration/energy_converted_spectra/*.csv text eol=lf
+calibration/validation/*.csv text eol=lf
+calibration/validation/*.json text eol=lf

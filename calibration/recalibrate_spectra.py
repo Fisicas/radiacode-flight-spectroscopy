@@ -178,7 +178,7 @@ def write_csv(
 ) -> None:
     """Write the recalibrated spectrum to CSV."""
     with csv_path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, lineterminator="\n")
 
         # Metadata as commented rows. Excel will still open these, and OPUS/other
         # software can ignore or skip them if needed.
